@@ -2,3 +2,5 @@ build
 .classpath
 .gitignore
 .project
+target
+Cargo.lock
