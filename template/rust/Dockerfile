@@ -9,5 +9,7 @@ RUN cargo install --path ./main
 
 HEALTHCHECK --interval=2s CMD [ -e /tmp/.lock ] || exit 1
 
-CMD ["main"]
+ENV fprocess=main
+
+CMD ["fwatchdog"]
 
